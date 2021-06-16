@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitar Shop</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <header class="header">
+
+    <h1 class="sr-only">Guitar shop</h1>
+    
+    <div class="container">
+        <nav class="header__menu menu">
+            <a class="logo" href="#">Guitar Shop</a>
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a class="menu__link" href="#">Home</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">Catalog</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">About</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">Blog</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">Contacts</a>
+                </li>
+            </ul>
+            <ul class="header__userbar">
+                <li class="header__userbar-item header__account">
+                    <button class="header__button" type="button">
+                        <svg class="header__icon" viewBox="0 0 16 16" width="16" height="16">
+                            <use xlink:href="images/sprite.svg#login"></use>
+                        </svg>
+                    </button>
+
+                    <ul class="header__dropdown dropdown">
+                        <li class="dropdown__item">
+                            <a class="dropdown__link" href="#">Login</a>
+                        </li>
+                        <li class="dropdown__item">
+                            <a class="dropdown__link" href="#">Register</a>
+                        </li>
+                        <li class="dropdown__item">
+                            <a class="dropdown__link" href="#">My account</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="header__userbar-item">
+                    <button class="header__button" type="button">
+                        <svg class="header__icon" viewBox="0 0 16 16" width="16" height="16">
+                            <use xlink:href="images/sprite.svg#search"></use>
+                        </svg>
+                    </button>
+                </li>
+                <li class="header__userbar-item">
+                    <button class="header__button" type="button">
+                        <svg class="header__icon" viewBox="0 0 17 17" width="17" height="17">
+                            <use xlink:href="images/sprite.svg#cart"></use>
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+        <div class="header__burger">
+            <span></span>
+        </div>
+    </div>
+</header>
+
+    <section class="banner">
+        <ul class="banner__list">
+            <li class="banner__item">
+                <div class="banner__content wow" data-wow-offset="10" style="background-image: url(images/banner/guitar3.jpg);">
+                    <div class="container">
+                        <h2 class="banner__title">
+                            Change your life
+                            <span class="banner__subtitle">Buy a new guitar today!</span>
+                        </h2>
+                        <a class="banner__link" href="#">Shop now</a>
+                    </div>
+                </div>
+            </li>
+            <li class="banner__item">
+                <div class="banner__content wow" data-wow-offset="10" style="background-image: url(images/banner/guitar2.jpg);">
+                    <div class="container">
+                        <h2 class="banner__title">
+                            Change your life
+                            <span class="banner__subtitle">Buy a new guitar today!</span>
+                        </h2>
+                        <a class="banner__link" href="#">Shop now</a>
+                    </div>
+                </div>
+            </li>
+            <li class="banner__item">
+                <div class="banner__content wow" data-wow-offset="10" style="background-image: url(images/banner/guitar1.jpg);">
+                    <div class="container">
+                        <h2 class="banner__title">
+                            Change your life
+                            <span class="banner__subtitle">Buy a new guitar today!</span>
+                        </h2>
+                        <a class="banner__link" href="#">Shop now</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+    
+
+    <script src="js/main.min.js"></script>
+</body>
+</html>
