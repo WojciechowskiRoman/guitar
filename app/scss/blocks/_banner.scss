@@ -1,8 +1,14 @@
 .banner {
 
+    animation: fadeIn 1.5s ease-in-out;
+
     &__item {
         display: flex;
         height: 76vh;
+
+        @media(max-width: $medium) {
+            height: 70vh;
+        }
     }
 
     &__content {
@@ -15,11 +21,6 @@
         background-repeat: no-repeat;
         background-position: top center;
         background-size: cover;
-        animation: fadeIn 1s;
-
-        @media(max-width: $medium) {
-            height: 85%;
-        }
     }
 
     &__title {
@@ -63,15 +64,10 @@
 
     &__link {
         padding: 30px 50px;
-        position: relative;
         font-size: 28px;
         width: 213px;
-        color: #fff;
-        background-color: #b9b90e;
-        border-radius: 50px;
-        transition: color 0.3s, background-color 0.3s, box-shadow 0.3s;
 
-        @media(max-width: $tablet) {
+        @media(max-width: $extra-large) {
             padding: 20px 40px;
         }
 
@@ -83,15 +79,6 @@
         @media(max-width: $small-phone) {
             padding: 10px 32px;
             font-size: 19px;
-        }
-
-        &:hover {
-            background-color: #fff;
-            color: #000;
-        }
-
-        &:active {
-            box-shadow: 0 0 20px $rioja;
         }
     }
 }
@@ -115,16 +102,6 @@
     }
 }
 
-.slick-prev {
-    transform: translateY(-50%);
-    left: 0;
-}
-
-.slick-next {
-    transform: translateY(-50%);
-    right: 0;
-}
-
 .slick-dots { 
     display: flex;
     align-items: center;
@@ -141,13 +118,24 @@
     border-radius: 50%;
     width: 30px;
     height: 29px;
+    background-color: $accent;
     opacity: 0.3;
     transition: opacity 0.5s;
     cursor: pointer;
 
-    @media(max-width: $tablet) {
+    @media(max-width: $extra-large) {
         width: 27px;
         height: 26px;
+    }
+
+    @media(max-width: $tablet) {
+        width: 25px;
+        height: 24px;
+    }
+
+    @media(max-width: $small-phone) {
+        width: 22px;
+        height: 20px;
     }
 
     &:hover {
