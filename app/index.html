@@ -7,14 +7,16 @@
     <title>Guitar Shop</title>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body>
+<body id="body">
     <header class="header wow" data-wow-offset="10">
 
     <h1 class="sr-only">Guitar shop</h1>
     
     <div class="container">
         <nav class="header__menu menu">
-            <a class="logo" href="#">Guitar Shop</a>
+            <a class="logo" href="#body">
+                <img class="logo__img" src="images/logo.svg" alt="logo">
+            </a>
             <ul class="menu__list">
                 <li class="menu__item">
                     <a class="menu__link" href="#">Home</a>
@@ -79,9 +81,8 @@
             <li class="banner__item">
                 <div class="banner__content" style="background-image: url(images/banner/guitar2.jpg);">
                     <div class="container">
-                        <h2 class="banner__title">
+                        <h2 class="banner__title title">
                             Change your life
-                            <span class="banner__subtitle">Buy a new guitar today!</span>
                         </h2>
                         <a class="banner__link link-button" href="#">Shop now</a>
                     </div>
@@ -90,9 +91,8 @@
             <li class="banner__item">
                 <div class="banner__content" style="background-image: url(images/banner/guitar3.jpg);">
                     <div class="container">
-                        <h2 class="banner__title">
+                        <h2 class="banner__title title">
                             Change your life
-                            <span class="banner__subtitle">Buy a new guitar today!</span>
                         </h2>
                         <a class="banner__link link-button" href="#">Shop now</a>
                     </div>
@@ -101,9 +101,8 @@
             <li class="banner__item">
                 <div class="banner__content" style="background-image: url(images/banner/guitar1.jpg);">
                     <div class="container">
-                        <h2 class="banner__title">
+                        <h2 class="banner__title title">
                             Change your life
-                            <span class="banner__subtitle">Buy a new guitar today!</span>
                         </h2>
                         <a class="banner__link link-button" href="#">Shop now</a>
                     </div>
@@ -152,13 +151,53 @@
                                 <use xlink:href="images/sprite.svg#like"></use>
                             </svg>
                         </button>
-                        <a class="product__link" href="#">
+                        <a class="product__link" href="#" title="go to product page">
                             <img class="product__img" src="images/types/1.png" alt="guitar">
                         </a>
                         <div class="product__box">
                             <span class="product__name">Guitar 6 string</span>
                             <div class="star" data-rateyo-rating="4.8"></div>
-                            <a class="product__reviews" href="#">
+                            <a class="product__reviews" href="#" title="go to product page">
+                                <span>4</span>
+                                reviews
+                            </a>
+                            <span class="product__cost">$1200</span>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <article class="product mix acoustic">
+                            <button class="product__like" type="button">
+                                <span class="sr-only">add to favorite</span>
+                                <svg class="product__icon" viewBox="0 0 18 18" width="18" height="18">
+                                    <use xlink:href="images/sprite.svg#like"></use>
+                                </svg>
+                            </button>
+                            <a class="product__link" href="#" title="go to product page">
+                                <img class="product__img" src="images/types/2.png" alt="guitar">
+                            </a>
+                            <div class="product__box">
+                                <span class="product__name">Acoustic 6 string</span>
+                                <div class="star" data-rateyo-rating="4.8"></div>
+                                <a class="product__reviews" href="#" title="go to product page">
+                                    <span>4</span>
+                                    reviews
+                                </a>
+                                <span class="product__cost">$600</span>
+                            </div>
+                        </article>
+                        <button class="product__like" type="button">
+                            <span class="sr-only">add to favorite</span>
+                            <svg class="product__icon" viewBox="0 0 18 18" width="18" height="18">
+                                <use xlink:href="images/sprite.svg#like"></use>
+                            </svg>
+                        </button>
+                        <a class="product__link" href="#" title="go to product page">
+                            <img class="product__img" src="images/types/1.png" alt="guitar">
+                        </a>
+                        <div class="product__box">
+                            <span class="product__name">Guitar 6 string</span>
+                            <div class="star" data-rateyo-rating="4.8"></div>
+                            <a class="product__reviews" href="#" title="go to product page">
                                 <span>4</span>
                                 reviews
                             </a>
@@ -172,13 +211,13 @@
                                 <use xlink:href="images/sprite.svg#like"></use>
                             </svg>
                         </button>
-                        <a class="product__link" href="#">
-                            <img class="product__img" src="images/types/1.png" alt="guitar">
+                        <a class="product__link" href="#" title="go to product page">
+                            <img class="product__img" src="images/types/3.png" alt="bass">
                         </a>
                         <div class="product__box">
-                            <span class="product__name">Guitar 6 string</span>
+                            <span class="product__name">Bass 4 string</span>
                             <div class="star" data-rateyo-rating="4.8"></div>
-                            <a class="product__reviews" href="#">
+                            <a class="product__reviews" href="#" title="go to product page">
                                 <span>4</span>
                                 reviews
                             </a>
@@ -192,13 +231,13 @@
                                 <use xlink:href="images/sprite.svg#like"></use>
                             </svg>
                         </button>
-                        <a class="product__link" href="#">
-                            <img class="product__img" src="images/types/1.png" alt="guitar">
+                        <a class="product__link" href="#" title="go to product page">
+                            <img class="product__img" src="images/types/3.png" alt="bass">
                         </a>
                         <div class="product__box">
-                            <span class="product__name">Guitar 6 string</span>
+                            <span class="product__name">Bass 4 string</span>
                             <div class="star" data-rateyo-rating="4.8"></div>
-                            <a class="product__reviews" href="#">
+                            <a class="product__reviews" href="#" title="go to product page">
                                 <span>4</span>
                                 reviews
                             </a>
@@ -212,13 +251,13 @@
                                 <use xlink:href="images/sprite.svg#like"></use>
                             </svg>
                         </button>
-                        <a class="product__link" href="#">
+                        <a class="product__link" href="#" title="go to product page">
                             <img class="product__img" src="images/types/1.png" alt="guitar">
                         </a>
                         <div class="product__box">
                             <span class="product__name">Guitar 6 string</span>
                             <div class="star" data-rateyo-rating="4.8"></div>
-                            <a class="product__reviews" href="#">
+                            <a class="product__reviews" href="#" title="go to product page">
                                 <span>4</span>
                                 reviews
                             </a>
@@ -232,17 +271,57 @@
                                 <use xlink:href="images/sprite.svg#like"></use>
                             </svg>
                         </button>
-                        <a class="product__link" href="#">
+                        <a class="product__link" href="#" title="go to product page">
                             <img class="product__img" src="images/types/1.png" alt="guitar">
                         </a>
                         <div class="product__box">
                             <span class="product__name">Guitar 6 string</span>
                             <div class="star" data-rateyo-rating="4.8"></div>
-                            <a class="product__reviews" href="#">
+                            <a class="product__reviews" href="#" title="go to product page">
                                 <span>4</span>
                                 reviews
                             </a>
                             <span class="product__cost">$1200</span>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <button class="product__like" type="button">
+                            <span class="sr-only">add to favorite</span>
+                            <svg class="product__icon" viewBox="0 0 18 18" width="18" height="18">
+                                <use xlink:href="images/sprite.svg#like"></use>
+                            </svg>
+                        </button>
+                        <a class="product__link" href="#" title="go to product page">
+                            <img class="product__img" src="images/types/1.png" alt="guitar">
+                        </a>
+                        <div class="product__box">
+                            <span class="product__name">Guitar 6 string</span>
+                            <div class="star" data-rateyo-rating="4.8"></div>
+                            <a class="product__reviews" href="#" title="go to product page">
+                                <span>4</span>
+                                reviews
+                            </a>
+                            <span class="product__cost">$1200</span>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <button class="product__like" type="button">
+                            <span class="sr-only">add to favorite</span>
+                            <svg class="product__icon" viewBox="0 0 18 18" width="18" height="18">
+                                <use xlink:href="images/sprite.svg#like"></use>
+                            </svg>
+                        </button>
+                        <a class="product__link" href="#" title="go to product page">
+                            <img class="product__img" src="images/types/2.png" alt="guitar">
+                        </a>
+                        <div class="product__box">
+                            <span class="product__name">Acoustic 6 string</span>
+                            <div class="star" data-rateyo-rating="4.8"></div>
+                            <a class="product__reviews" href="#" title="go to product page">
+                                <span>4</span>
+                                reviews
+                            </a>
+                            <span class="product__cost">$600</span>
                         </div>
                     </article>
                 </div>
@@ -252,10 +331,96 @@
 
     <section class="news">
         <div class="container">
-            
+            <h2 class="news__title title">News</h2>
+            <div class="news__list">
+                <article class="blog wow fadeIn" data-wow-offset="200">
+                    <img class="blog__img" src="images/news/1.webp" alt="blog image">
+                    <div class="blog__box">
+                        <time class="blog__date" datetime="2021-05-15 19:00">15.05.2021</time>
+                        <a class="blog__link" href="#" title="go to news">
+                            <span class="blog__title">Godin</span>
+                        </a>
+                        <span class="blog__summary">
+                            <p>
+                                Godin equips its hybrid Radium model with a sleek new Matte Green finish
+                            </p>
+                        </span>
+                        <a class="blog__more" href="#">
+                            Show more
+                            <svg class="blog__icon" viewBox="0 0 35 35" width="18" height="18">
+                                <use xlink:href="images/sprite.svg#more"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+                <article class="blog wow fadeIn" data-wow-offset="200">
+                    <img class="blog__img" src="images/news/2.webp" alt="blog image">
+                    <div class="blog__box">
+                        <time class="blog__date" datetime="2021-05-15 19:00">15.05.2021</time>
+                        <a class="blog__link" href="#" title="go to news">
+                            <span class="blog__title">Godin</span>
+                        </a>
+                        <span class="blog__summary">
+                            <p>
+                                Godin equips its hybrid Radium model with a sleek new Matte Green finish
+                            </p>
+                        </span>
+                        <a class="blog__more" href="#">
+                            Show more
+                            <svg class="blog__icon" viewBox="0 0 35 35" width="18" height="18">
+                                <use xlink:href="images/sprite.svg#more"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+                <article class="blog wow fadeIn" data-wow-offset="200">
+                    <img class="blog__img" src="images/news/3.webp" alt="blog image">
+                    <div class="blog__box">
+                        <time class="blog__date" datetime="2021-05-15 19:00">15.05.2021</time>
+                        <a class="blog__link" href="#" title="go to news">
+                            <span class="blog__title">Godin</span>
+                        </a>
+                        <span class="blog__summary">
+                            <p>
+                                Godin equips its hybrid Radium model with a sleek new Matte Green finish
+                            </p>
+                        </span>
+                        <a class="blog__more" href="#">
+                            Show more
+                            <svg class="blog__icon" viewBox="0 0 35 35" width="18" height="18">
+                                <use xlink:href="images/sprite.svg#more"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+            </div>
         </div>
 
     </section>
+
+    <form class="subscr">
+        <div class="container">
+            <label class="subscr__label wow fadeInLeft" data-wow-offset="10">
+                <h2 class="subscr__title title">Sign Up for News</h2>
+                <div class="subscr__box">
+                    <input class="subscr__input" type="email" placeholder="email address" required>
+                    <button class="subscr__button" type="submit">Subscribe</button>
+                </div>
+            </label>
+        </div>
+    </form>
+
+    <footer class="footer">
+    <div class="container">
+        
+    </div>
+</footer>
+
+    <a class="arrow" href="#body">
+        <svg viewBox="0 0 32 32" width="32" height="32">
+            <use xlink:href="images/sprite.svg#up"></use>
+        </svg>
+    </a>
 
     <script src="js/main.min.js"></script>
 </body>

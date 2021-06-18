@@ -90,10 +90,6 @@
         background-color: transparent;
         transition: bottom 0.3s;
 
-        @media(max-width: $medium) {
-            padding: 20px 30px;
-        }
-
         @media(max-width: $small-phone) {
             bottom: -20%;
         }
@@ -104,7 +100,7 @@
         font-size: 34px;
 
         @media(max-width: $small-phone) {
-            font-size: 29px;
+            font-size: 25px;
         }
     }
 

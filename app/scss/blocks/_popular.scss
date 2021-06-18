@@ -1,16 +1,84 @@
 .popular {
 
-    background-image: url('../../images/popular/BG.jpg');
+    padding: 60px 0 90px;
+    background-image: url('../images/popular/BG.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-
-    padding: 40px 0 90px;
 
     &__inner {
         
     }
 
     &__title {
+    }
+
+    .slick-slide {
+        margin-right: 25px;
+    
+        @media(max-width: $medium) {
+            margin-right: 0;
+        }
+    }
+    
+    .slick-initialized .slick-slide {
+        text-align: center;
+    }
+    
+    .slick-prev {
+        left: -8px;
+    }
+    
+    .slick-next {
+        right: -8px;
+    }
+    
+    .slick-prev, .slick-next {
+        padding: 20px 0;
+        position: absolute;
+        bottom: 50%;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        z-index: 1;
+        transition: background-color 0.3s;
+        transform: translateY(23%);
+    
+        &:hover {
+            background-color: rgba($rioja, 0.7);
+        }
+    
+        &:active {
+            background-color: $rioja;
+        }
+    }
+    
+    .slick-dots {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        right: 50%;
+        bottom: -10%;
+        transform: translateX(50%);
+    }
+    
+    .slick-dots button {
+        margin-right: 9px;
+        font-size: 0;
+        border-radius: 0;
+        width: 30px;
+        height: 1px;
+        background-color: $accent;
+        opacity: 0.3;
+        transition: opacity 0.5s;
+        cursor: pointer;
+    
+        &:hover {
+            opacity: 1;
+        }
+    }
+    
+    .slick-active button{
+        opacity: 1;
     }
 }
 
@@ -34,7 +102,7 @@
         position: absolute;
         top: 6px;
         right: 6px;
-        fill: $rioja;
+        fill: $wood;
         transition: transform 0.3s, fill 0.3s;
 
         &:hover {
@@ -63,59 +131,21 @@
         margin-bottom: 15px;
         display: block;
         font-size: 18px;
-        color: $accent;
+        color: $wood;
         @extend %limit;
     }
 
     &__reviews {
-        color: $accent;
+        color: $wood;
     }
 
     &__cost {
-        padding-right: 20px;
         float: right;
     } 
 }
-.header {
 
-    &__icon {
-    }
-}
 .star {
     padding: 0;
     margin-right: 8px;
     display: inline-block;
-}
-
-
-.slick-slide {
-    margin-right: 25px;
-
-    @media(max-width: $medium) {
-        margin-right: 0;
-    }
-}
-
-.slick-initialized .slick-slide {
-    text-align: center;
-}
-
-.slick-prev {
-    left: -8px;
-}
-
-.slick-next {
-    right: -8px;
-}
-
-.slick-prev, .slick-next {
-    padding: 20px 0;
-    position: absolute;
-    bottom: 50%;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    z-index: 1;
-    transition: background-color 0.3s;
-    transform: translateY(23%);
 }

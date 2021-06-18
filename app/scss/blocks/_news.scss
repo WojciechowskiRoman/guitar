@@ -1,0 +1,155 @@
+.news {
+
+    padding: 60px 0;
+    background-image: url('../images/news/BG.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    &__list {
+        display: flex;
+
+        @media(max-width: $tablet) {
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    }
+}
+.blog {
+
+    margin-right: 10px;
+    flex: 0 1 33.333%;
+    position: relative;
+    height: 366px;
+    cursor: pointer;
+    overflow: hidden;
+    animation-duration: 1s;
+
+    &:not(:last-child) {
+        margin-bottom: 40px;
+    }
+
+    &:nth-child(1) {
+        animation-delay: 0;
+    }
+
+    &:nth-child(2) {
+        animation-delay: 0.3s;
+    }
+
+    &:nth-child(3) {
+        animation-delay: 0.6s;
+    }
+
+    &:hover {
+        .blog__box {
+            top: 0;
+        }
+
+        .blog__title {
+            color: $rioja;
+        }
+    }
+
+    @media(max-width: $tablet) {
+        display: flex;
+        justify-content: center;
+        max-width: 480px;
+        width: 100%;
+        height: 450px;
+        flex: 0 1 100%;
+    }
+
+    @media(max-width: $medium) {
+        margin-right: 0;
+    }
+
+    @media(max-width: $small-phone) {
+        max-width: 430px;
+        height: 340px;
+    }
+
+    &__img {
+        
+        height: inherit;
+    }
+
+    &__box {
+        padding: 30px 20px;
+        position: absolute;
+        top: 70%;
+        height: 100%;
+        color: #fff;
+        background-color: rgba(#000, 0.5);
+        font-size: 18px;
+        transition: top 0.3s;
+
+        @media(max-width: $small-phone) {
+            top: 68%;
+        }
+    }
+
+    &__date {
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    &__link {
+        &:hover {
+            .blog__title {
+                color: #dddd10;
+            }
+        }
+
+        &:active {
+            .blog__title {
+                color: rgba($wood, 0.9);
+            }
+        }
+    }
+
+    &__title {
+        margin-bottom: 30px;
+        display: block;
+        color: $wood;
+        font-size: 34px;
+        font-weight: 500;
+        transition: color 0.3s;
+    }
+
+    &__summary {
+        font-size: 18px;
+    }
+
+    &__more {
+        padding: 12px;
+        position: absolute;
+        bottom: 28px;
+        right: 49px;
+        font-size: 18px;
+        border-radius: 25px;
+        color: $rioja;
+        fill: $rioja;
+        transition: color 0.3s, fill 0.3s, box-shadow 0.3s;
+
+
+        &:hover {
+            color: #dddd10;
+            fill: #dddd10;
+        }
+
+        &:active {
+            color: #dddd10;
+            fill: #dddd10;
+        }
+
+        &:focus {
+            box-shadow: 0 0 13px #dddd10;
+        }
+    }
+
+    &__icon {
+        margin-left: 10px;
+        position: absolute;
+        top: 14px;
+    }
+}
