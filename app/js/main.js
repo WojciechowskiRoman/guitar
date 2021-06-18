@@ -21,7 +21,10 @@ $(function() {
   $('.banner__list').slick({
       fade: true,
       arrows: false,
-      speed: 1000,
+      autoplay: true,
+      speed: 1200,
+      pauseOnFocus: false,
+      pauseOnHover: false,
       dots: true,
       responsive: [
           {
