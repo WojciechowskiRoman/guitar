@@ -1,0 +1,128 @@
+.footer {
+
+    padding: 60px 0;
+
+    @media(max-width: $medium) {
+        padding: 60px 0 40px;
+    }
+
+    &__columns {
+        display: flex;
+        justify-content: space-between;
+
+        @media(max-width: $tablet) {
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    }
+
+    &__column {
+        display: flex;
+        flex-direction: column;
+        max-width: 332px;
+        width: 100%;
+
+        @media(max-width: $tablet) {
+            margin-bottom: 40px;
+        }
+
+        @media(max-width: $medium) {
+            max-width: 273px;
+        }
+
+        @media(max-width: $small-phone) {
+            text-align: center;
+        }
+    }
+
+    &__title {
+        margin-bottom: 34px;
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+
+    &__item {
+        margin-bottom: 16px;
+    }
+
+    &__link {
+        padding: 15px 0;
+        color: $accent;
+        font-size: 16px;
+        font-weight: 400;
+        transition: color 0.3s;
+
+        &--contact {
+            padding: 0;
+            margin-bottom: 15px;
+
+            @media(max-width: $small-phone) {
+                margin-bottom: 20px;
+            }
+        }
+
+        @media(max-width: $small-phone) {
+            display: block;
+        }
+
+        &:hover {
+            color: $wood;
+        }
+
+        &:active {
+            color: $rioja;
+        }
+    }
+
+    address{ 
+        margin-bottom: 15px;
+        font-size: 16px;
+        color: $accent;
+        font-style: normal;
+
+        @media(max-width: $small-phone) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__social {
+        display: flex;
+
+        @media(max-width: $small-phone) {
+            justify-content: center;
+        }
+    }
+
+    &__icon {
+        margin-right: 15px;
+    }
+
+    &__social-link {
+        display: block;
+        fill: $accent;
+        transition: fill 0.3s;
+
+        &:hover {
+            fill: $wood;
+        }
+
+        &:focus {
+            fill: #fff;
+        }
+    }
+
+    .logo {
+        margin-top: -14px;
+        margin-bottom: 14px;
+        height: 52px;
+
+        &__img {
+            width: 50%;
+            height: inherit;
+
+            @media(max-width: $small-phone) {
+                width: 100%;
+            }
+        }
+    }
+}

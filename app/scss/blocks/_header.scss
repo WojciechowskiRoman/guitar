@@ -7,6 +7,12 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        // position: relative;
+
+        @media(max-width: $medium) {
+            padding: 20px 0 60px;
+            justify-content: center;
+        }
     }
 
     &__list {
@@ -39,8 +45,8 @@
 
         @media(max-width: $medium) {
             position: absolute;
-            right: 50%;
-            transform: translateX(50%);
+            left: 20px;
+            top: 102px;
         }
     }
 
@@ -118,7 +124,6 @@
         transition: transform 0.5s;
 
         @media(max-width: $medium) {
-            transform: translateX(-27%);
             position: absolute;
             display: flex;
             flex-direction: row;
@@ -129,7 +134,7 @@
     &__burger {
         display: none;
         position: absolute;
-        top: 40px;
+        top: 124px;
         right: 20px;
         width: 44px;
         height: 44px;
@@ -188,10 +193,6 @@
 
         @media(max-width: $medium) {
             display: block;
-        }
-
-        @media(max-width: $small-phone) {
-            top: 40px;
         }
     }
 }
@@ -254,7 +255,7 @@
         }
 
         @media(max-width: $small-phone) {
-            padding-top: 43%;
+            padding-top: 53%;
         }
     }
 
@@ -298,10 +299,4 @@
             font-size: 24px;
         }
     }
-}
-
-.logo {
-    font-size: 36px;
-    color: #fff;
-    z-index: 3;
 }
