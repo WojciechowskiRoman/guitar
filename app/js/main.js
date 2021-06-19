@@ -13,6 +13,7 @@ $(function() {
     asNavFor: '.product-slider__small',
     slidesToShow: 1,
     fade: true,
+    arrows: false,
     speed: 1000,
 
   });
