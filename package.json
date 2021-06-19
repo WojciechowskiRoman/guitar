@@ -29,7 +29,9 @@
     "wow.js": "^1.2.2"
   },
   "dependencies": {
+    "color-string": "^1.5.5",
     "jquery-form-styler": "^2.0.2",
+    "node-sass": "^6.0.0",
     "slick-carousel": "^1.8.1"
   }
 }

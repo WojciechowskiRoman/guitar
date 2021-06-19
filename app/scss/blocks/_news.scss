@@ -69,7 +69,6 @@
     }
 
     &__img {
-        
         height: inherit;
     }
 
@@ -129,7 +128,7 @@
         border-radius: 25px;
         color: $rioja;
         fill: $rioja;
-        transition: color 0.3s, fill 0.3s, box-shadow 0.3s;
+        transition: fill 0.3s, box-shadow 0.3s;
 
 
         &:hover {

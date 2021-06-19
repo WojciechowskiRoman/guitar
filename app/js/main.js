@@ -1,6 +1,26 @@
 $(function() {
 
-  var mixer = mixitup('.popular__list');
+  $('.catalog__switch').on('click', function() {
+    $('.aside').toggleClass('aside--active');
+  });
+
+  $('.catalog__select').styler({});
+
+  $('.aside__price-input').ionRangeSlider({
+    type: "double",
+
+    onStart: function (data) {
+      $('.aside__price-from').text("$" + data.from);
+      $('.aside__price-to').text("$" + data.to);
+    },
+
+    onChange: function (data) {
+      $('.aside__price-from').text("$" + data.from);
+      $('.aside__price-to').text("$" + data.to);
+    },
+  });
+
+  // var mixer = mixitup('.popular__list');
 
   wow = new WOW({
     boxClass:     'wow',      
@@ -57,8 +77,8 @@ $(function() {
       {
         breakpoint: 1024,
         settings: {
-          arrows: false,
-          dots: true,
+          // arrows: false,
+          // dots: true,
           centerMode: true,
           slidesToShow: 2
         }
@@ -67,8 +87,8 @@ $(function() {
         breakpoint: 768,
         settings: {
           centerMode: false,
-          arrows: false,
-          dots: true,
+          // arrows: false,
+          // dots: true,
           slidesToShow: 2
         }
       },
@@ -105,4 +125,4 @@ $(function() {
       }, 800);
     return false;
     });
-});
+})

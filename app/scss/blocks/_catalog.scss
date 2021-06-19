@@ -1,0 +1,218 @@
+.catalog {
+
+    padding: 20px 0 60px;
+
+    &__inner {
+        display: flex;
+        position: relative;
+    }
+
+    &__content {
+        width: 100%;
+    }
+
+    &__choise {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__top {
+        padding: 15px 0;
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 5px;
+        background-color: $dark;
+
+        @media(max-width: $small-phone) {
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    }
+
+    &__view {
+        display: flex;
+        align-items: center;
+
+        @media(max-width: $small-phone) {
+            padding: 10px 0;
+        }
+    }
+
+    &__switch {
+        display: none;
+        fill: $wood;
+        transition: fill 0.3s;
+
+        &:focus {
+            fill: #fff;
+        }
+
+        @media(max-width: $medium) {
+            display: flex;
+        }
+    }
+
+    &__icon-filter {
+        margin: 3px 0 5px 0;
+    }
+
+    &__sort {
+        display: flex;
+        align-items: center;
+    }
+
+    &__select-name {
+        margin-right: 15px;
+    }
+
+    &__select {
+        font-family: "Poppins", sans-serif;
+        color: #fff;
+        width: 220px;
+        
+        @media(max-width: $small-phone) {
+            max-width: 174px;
+        }
+    }
+
+    &__cards {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        @media(max-width: $tablet) {
+            justify-content: space-around;
+        }
+    }
+
+    .product {
+        margin: 0 8px 30px 0;
+        max-width: 222px;
+        width: 100%;
+        background-color: $dark;
+
+        &:hover {
+            background-color: #292323;
+        }
+
+        &__box {
+            font-size: 15px;
+            background-color: #403636;
+        }
+    }
+}
+
+.irs--flat {
+    height: 32px;
+    z-index: 1;
+
+    .irs-line {
+        top: 10px;
+        height: 1px;
+        background-color: $wood;
+        border-radius: 4px;
+    }
+
+    .irs-bar {
+        top: 9px;
+        height: 3px;
+        background-color: $wood;
+    }
+
+    .irs-min, .irs--flat, .irs-max {
+        display: none;
+    }
+
+    .irs-handle>i:first-child {
+        top: -19px;
+        border-radius: 100%;
+        width: 15px;
+        height: 82%;
+        background-color: $wood;
+    }
+
+    .irs-from, .irs--flat, .irs-to, .irs--flat, .irs-single {
+        display: none;
+    }
+
+    .irs-handle.state_hover>i:first-child, .irs--flat, .irs-handle:hover>i:first-child {
+        background-color: #b17332;
+    }
+}
+
+.jq-selectbox {
+
+    z-index: 2;
+
+    &__select-text {
+        font-size: 16px;
+        font-family: "Poppins", sans-serif;
+    }
+
+    &__select {
+        padding: 0 45px 0 10px;
+        height: 32px;
+        border: 1px solid $wood;
+        border-bottom-color: none;
+        border-radius: 4px;
+        background: none;
+        color: #fff;
+        box-shadow: none;
+        text-shadow: none;
+        background-color: $dark;
+
+        &:hover {
+            background: none;
+        }
+    
+        &:focus {
+            border: none;
+        }
+
+        &:active {
+            box-shadow: none;
+        }
+    }
+
+    li {
+        padding: 15px 10px;
+        font-size: 16px;
+        font-family: "Poppins", sans-serif;
+        background-color: $dark;
+        border: 1px solid rgba($wood, 0.3);
+        color: #FFF;
+        transition: background-color 0.3s;
+    }
+
+    li.selected {
+        background-color: $wood;
+    }
+
+    li {
+        &:hover {
+            background-color: $wood;
+        }
+    }
+
+    &__trigger-arrow  {
+        border-top-color: #fff;
+        transition: border 0.3s, transform 0.3s;
+    }
+
+    &__dropdown {
+        border: 1px solid $wood;
+    }
+
+    &:hover {
+        .jq-selectbox__trigger-arrow {
+            border-top-color: $wood;
+        }        
+    }
+}
+
+.jq-selectbox.focused .jq-selectbox__select {
+    border: 1px solid $wood;
+}

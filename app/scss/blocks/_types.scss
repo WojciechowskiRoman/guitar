@@ -1,6 +1,6 @@
 .types {
 
-    background-image: url('../../images/types/BG.jpg');
+    background-image: url('../images/types/BG.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -73,8 +73,8 @@
 
     &__img {
         padding: 20px 10px;
-        height: inherit;
         margin: 0 auto;
+        height: inherit;
         transition: opacity 0.3s;
     }
 
@@ -108,8 +108,4 @@
         padding: 10px 40px;
         font-size: 20px;
     }
-}
-.container {
-}
-.link-button {
 }

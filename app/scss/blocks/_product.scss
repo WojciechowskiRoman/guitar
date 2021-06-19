@@ -1,0 +1,61 @@
+.product {
+    background-color: $gable;
+    border-radius: 5px;
+    height: 400px;
+    max-width: 260px;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s;
+
+    &:hover {
+        background-color: rgba($gable, 0.9);
+        .product__img {
+            transform: scale(1.05);
+        }
+    }
+
+    &__like {
+        position: absolute;
+        top: 6px;
+        right: 6px;
+        fill: $wood;
+        transition: transform 0.3s, fill 0.3s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        &:active {
+            fill: #ffff00;
+        }
+    }
+
+    &__img {
+        height: 80%;
+        margin: 0 auto;
+        transition: transform 0.3s;
+    }
+
+    &__box {
+        padding: 15px 10px;
+        height: 20%;
+        font-size: 16px;
+        background-color: rgba(#19293a, 0.8);
+    }
+
+    &__name {
+        margin-bottom: 15px;
+        display: block;
+        font-size: 18px;
+        color: $wood;
+        @extend %limit;
+    }
+
+    &__reviews {
+        color: $wood;
+    }
+
+    &__cost {
+        float: right;
+    } 
+}

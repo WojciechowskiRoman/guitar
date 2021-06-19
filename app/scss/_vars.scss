@@ -1,6 +1,8 @@
 $accent: #999;
 $rioja: #b9b90e;
 $wood: #ba8449;
+$dark: #221d1d;
+$gable: #102027;
 
 $extra-large: 1400px;
 $large: 1200px;
@@ -16,6 +18,20 @@ $small-phone: 576px;
   display: -webkit-box;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
+}
+
+%button-hover {
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $wood;
+    transition: top 0.3s, background-color 0.3s;
+}
 }
 
 
