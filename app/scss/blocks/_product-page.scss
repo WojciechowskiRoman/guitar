@@ -1,0 +1,224 @@
+.product-page {
+
+    &__inner {
+        margin-bottom: 50px;
+        display: flex;
+    }
+
+    &__sliders {
+        margin-right: 30px;
+        max-width: 49%;
+        width: 100%;
+    }
+
+    &__content {
+        width: 100%;
+    }
+
+}
+
+.product-slider {
+
+    &__big {
+        margin-bottom: 30px;
+    }
+
+    &__item {
+        min-height: 60px;
+        height: 1px;
+        cursor: pointer;
+        &--big {
+            min-height: 200px;
+        }
+    }
+
+    &__img {
+        height: initial;
+    }
+
+    &__small {
+        padding: 0 10px;
+    }
+}
+.product-info {
+
+    &__title {
+        margin-bottom: 20px;
+        font-size: 45px;
+        text-align: left;
+    }
+
+    &__box {
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__star {
+        padding: 0;
+        margin-right: 20px;
+    }
+
+    &__cost {
+        font-size: 25px;
+    }
+
+    &__summary {
+        margin-bottom: 30px;
+        display: block;
+        line-height: 1.5;
+    }
+
+    &__button {
+        padding: 13px;
+        position: relative;
+        width: 180px;
+        border: 1px solid $wood;
+        font-size: 20px;
+        color: #fff;
+        @extend %button-hover;
+        transition: background-color 0.3s, color 0.3s, border 0.3s;
+
+        &:hover {
+            color: #fff;
+            &::before {
+                top: 0;
+            }
+        }
+
+        &:active {
+
+            &::before {
+                background-color: #54391b;
+            }
+        }
+
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
+}
+
+
+.product-tabs {
+
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+
+    &__top {
+        margin: 0 auto 30px;
+        display: flex;
+        justify-content: space-around;
+        max-width: 700px;
+        width: 100%;
+    }
+
+    &__item {
+        border: 1px solid $wood;
+        flex: 0 1 33.333%;
+        text-align: center;
+
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
+
+    &__link {
+        padding: 20px 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        color: #fff;
+
+        &--active {
+            color: $wood;
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__content {
+        display: none;
+        line-height: 1.5;
+        width: 100%;
+
+        &--active {
+            display: flex;
+            
+        }
+    }
+
+    &__video {
+        position: relative;
+        display: block;
+        background-image: url("../images/product-page/video.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 450px;
+        width: 100%;
+
+        &:hover {
+            .product-tabs__icon {
+                width: 100px;
+                height: 100px;
+                fill: #999;
+            }
+
+            @media(max-width: $tablet) {
+                .product-tabs__icon {
+                    width: 90px;
+                    height: 90px;
+                }
+            }
+    
+            @media(max-width: $medium) {
+                .product-tabs__icon {
+                    width: 80px;
+                    height: 80px;
+                }
+            }
+    
+            @media(max-width: $small-phone) {
+                .product-tabs__icon {
+                    width: 70px;
+                    height: 70px;
+                }
+            }
+        }
+    }
+
+    &__icon {
+        width: 90px;
+        height: 90px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        fill: #fff;
+        transition: width 0.3s, height 0.3s, fill 0.3s;
+
+        @media(max-width: $tablet) {
+            width: 80px;
+            height: 80px;
+        }
+
+        @media(max-width: $medium) {
+            width: 70px;
+            height: 70px;
+        }
+
+        @media(max-width: $small-phone) {
+            width: 60px;
+            height: 60px;
+        }
+    }
+}
+.container {
+}
