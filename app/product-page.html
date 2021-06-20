@@ -17,7 +17,7 @@
 </head>
 
 <body id="body">
-    <header class="header wow" data-wow-offset="10">
+    <header class="header">
 
     <h1 class="sr-only">Guitar shop</h1>
     
@@ -131,9 +131,9 @@
                         </ul>
                     </div>
                     <div class="product-page__content product-info">
-                        <span class="product-info__title title">
+                        <h2 class="product-info__title title">
                             Ibanez Rg3exfm1
-                        </span>
+                        </h2>
                         <div class="product-info__box">
                             <div class="product-info__star" data-rateyo-rating="4"></div>
                             <span class="product-info__cost">$1200</span>
@@ -207,7 +207,7 @@
                                             <div class="comments__top">
                                                 <div class="comments__author">
                                                     <span class="comments__name">Jack</span>
-                                                    <time class="comments__date" datetime="11.03.2021">11.03.2021</time>
+                                                    <span class="comments__date">11.03.2021</span>
                                                 </div>
                                                 <div class="comments__star" data-rateyo-rating="4"></div>
                                             </div>
@@ -230,7 +230,7 @@
                                             <div class="comments__top">
                                                 <div class="comments__author">
                                                     <span class="comments__name">Jack</span>
-                                                    <time class="comments__date" datetime="11.03.2021">11.03.2021</time>
+                                                    <span class="comments__date">11.03.2021</span>
                                                 </div>
                                                 <div class="comments__star" data-rateyo-rating="4"></div>
                                             </div>
@@ -253,7 +253,7 @@
                                             <div class="comments__top">
                                                 <div class="comments__author">
                                                     <span class="comments__name">Jack</span>
-                                                    <time class="comments__date" datetime="11.03.2021">11.03.2021</time>
+                                                    <span class="comments__date">11.03.2021</span>
                                                 </div>
                                                 <div class="comments__star" data-rateyo-rating="4"></div>
                                             </div>
@@ -279,7 +279,7 @@
                                         Your rating
                                     </span>
                                     <label class="comments-form__label">
-                                        <input class="comments-form__input sr-only" type="radio" name="rating"></input>
+                                        <input class="comments-form__input sr-only" type="radio" name="rating">
                                         <span class="comments-form__radio">
                                             <svg viewBox="0 0 22 22" width="20" height="20">
                                                 <use xlink:href="images/sprite.svg#star"></use>
@@ -287,22 +287,8 @@
                                         </span>
                                     </label>
                                     <label class="comments-form__label">
-                                        <input class="comments-form__input sr-only" type="radio" name="rating"></input>
+                                        <input class="comments-form__input sr-only" type="radio" name="rating">
                                         <span class="comments-form__radio">
-                                            <svg viewBox="0 0 22 22" width="20" height="20">
-                                                <use xlink:href="images/sprite.svg#star"></use>
-                                            </svg>
-                                            <svg viewBox="0 0 22 22" width="20" height="20">
-                                                <use xlink:href="images/sprite.svg#star"></use>
-                                            </svg>
-                                        </span>
-                                    </label>
-                                    <label class="comments-form__label">
-                                        <input class="comments-form__input sr-only" type="radio" name="rating"></input>
-                                        <span class="comments-form__radio">
-                                            <svg viewBox="0 0 22 22" width="20" height="20">
-                                                <use xlink:href="images/sprite.svg#star"></use>
-                                            </svg>
                                             <svg viewBox="0 0 22 22" width="20" height="20">
                                                 <use xlink:href="images/sprite.svg#star"></use>
                                             </svg>
@@ -312,11 +298,8 @@
                                         </span>
                                     </label>
                                     <label class="comments-form__label">
-                                        <input class="comments-form__input sr-only" type="radio" name="rating"></input>
+                                        <input class="comments-form__input sr-only" type="radio" name="rating">
                                         <span class="comments-form__radio">
-                                            <svg viewBox="0 0 22 22" width="20" height="20">
-                                                <use xlink:href="images/sprite.svg#star"></use>
-                                            </svg>
                                             <svg viewBox="0 0 22 22" width="20" height="20">
                                                 <use xlink:href="images/sprite.svg#star"></use>
                                             </svg>
@@ -329,7 +312,24 @@
                                         </span>
                                     </label>
                                     <label class="comments-form__label">
-                                        <input class="comments-form__input sr-only" type="radio" name="rating" checked></input>
+                                        <input class="comments-form__input sr-only" type="radio" name="rating">
+                                        <span class="comments-form__radio">
+                                            <svg viewBox="0 0 22 22" width="20" height="20">
+                                                <use xlink:href="images/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg viewBox="0 0 22 22" width="20" height="20">
+                                                <use xlink:href="images/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg viewBox="0 0 22 22" width="20" height="20">
+                                                <use xlink:href="images/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg viewBox="0 0 22 22" width="20" height="20">
+                                                <use xlink:href="images/sprite.svg#star"></use>
+                                            </svg>
+                                        </span>
+                                    </label>
+                                    <label class="comments-form__label">
+                                        <input class="comments-form__input sr-only" type="radio" name="rating" checked>
                                         <span class="comments-form__radio">
                                             <svg viewBox="0 0 22 22" width="20" height="20">
                                                 <use xlink:href="images/sprite.svg#star"></use>
@@ -372,7 +372,7 @@
                 <div class="blog-item__box">
                     <time class="blog-item__date" datetime="2021-05-15 19:00">15.05.2021</time>
                     <a class="blog-item__link" href="#" title="go to news">
-                        <span class="blog-item__title">Godin</span>
+                        <h3 class="blog-item__title">Godin</h3>
                     </a>
                     <span class="blog-item__summary">
                         <p>
@@ -392,7 +392,7 @@
                 <div class="blog-item__box">
                     <time class="blog-item__date" datetime="2021-05-15 19:00">15.05.2021</time>
                     <a class="blog-item__link" href="#" title="go to news">
-                        <span class="blog-item__title">Godin</span>
+                        <h3 class="blog-item__title">Godin</h3>
                     </a>
                     <span class="blog-item__summary">
                         <p>
@@ -412,7 +412,7 @@
                 <div class="blog-item__box">
                     <time class="blog-item__date" datetime="2021-05-15 19:00">15.05.2021</time>
                     <a class="blog-item__link" href="#" title="go to news">
-                        <span class="blog-item__title">Godin</span>
+                        <h3 class="blog-item__title">Godin</h3>
                     </a>
                     <span class="blog-item__summary">
                         <p>
@@ -434,11 +434,11 @@
         <form class="subscr">
     <div class="container">
         <label class="subscr__label wow fadeIn" data-wow-offset="10">
-            <h2 class="subscr__title title">Sign Up for News</h2>
-            <div class="subscr__box">
+            <span class="subscr__title title">Sign Up for News</span>
+            <span class="subscr__box">
                 <input class="subscr__input" type="email" placeholder="email address" required>
                 <button class="subscr__button" type="submit">Subscribe</button>
-            </div>
+            </span>
         </label>
     </div>
 </form>
