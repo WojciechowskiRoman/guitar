@@ -280,7 +280,6 @@
                                                 <span class="comments__name">Jack</span>
                                                 <span class="comments__date">11.03.2021</span>
                                             </div>
-                                            <div class="comments__star" data-rateyo-rating="4"></div>
                                         </div>
                                         <span class="comments__text">
                                             <p>
@@ -303,7 +302,6 @@
                                                 <span class="comments__name">Jack</span>
                                                 <span class="comments__date">11.03.2021</span>
                                             </div>
-                                            <div class="comments__star" data-rateyo-rating="4"></div>
                                         </div>
                                         <span class="comments__text">
                                             <p>
@@ -326,7 +324,6 @@
                                                 <span class="comments__name">Jack</span>
                                                 <span class="comments__date">11.03.2021</span>
                                             </div>
-                                            <div class="comments__star" data-rateyo-rating="4"></div>
                                         </div>
                                         <span class="comments__text">
                                             <p>
@@ -345,11 +342,15 @@
 
                         <form class="comments-form">
                             <span class="comments-form__title">Leave a review</span>
-                            <label class="comments-form__top">
-                                <input class="comments-form__info" type="text" placeholder="Your name" required>
-                                <input class="comments-form__info" type="email" placeholder="Your email" required>
-                            </label>
-                            <textarea class="comments-form__info comments-form__info--review" placeholder="Your review" required></textarea>
+                            <div class="comments-form__top">
+                                <label class="comments-form__info">
+                                    <input class="comments-form__user" type="text" placeholder="Your name" required>
+                                </label>
+                                <label class="comments-form__info">
+                                    <input class="comments-form__user" type="email" placeholder="Your email" required>
+                                </label>
+                            </div>
+                            <textarea class="comments-form__user comments-form__user--review" placeholder="Your review" required></textarea>
                             <button class="comments-form__button" type="submit">Leave review</button>
                         </form>
                     </div>

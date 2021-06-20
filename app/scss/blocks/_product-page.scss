@@ -39,6 +39,12 @@
             text-align: center;
         }
     }
+
+    .comments-form {
+        &__info {
+            max-width: 580px;
+        }
+    }
 }
 
 .product-slider {
