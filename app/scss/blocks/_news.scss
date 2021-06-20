@@ -14,7 +14,7 @@
         }
     }
 }
-.blog {
+.blog-item {
 
     margin-right: 10px;
     flex: 0 1 33.333%;
@@ -41,11 +41,11 @@
     }
 
     &:hover {
-        .blog__box {
+        .blog-item__box {
             top: 0;
         }
 
-        .blog__title {
+        .blog-item__title {
             color: $rioja;
         }
     }
@@ -94,13 +94,13 @@
 
     &__link {
         &:hover {
-            .blog__title {
+            .blog-item__title {
                 color: #dddd10;
             }
         }
 
         &:active {
-            .blog__title {
+            .blog-item__title {
                 color: rgba($wood, 0.9);
             }
         }
@@ -128,7 +128,7 @@
         border-radius: 25px;
         color: $rioja;
         fill: $rioja;
-        transition: fill 0.3s, box-shadow 0.3s;
+        transition: fill 0.3s, box-shadow 0.3s, color 0.3s;
 
 
         &:hover {

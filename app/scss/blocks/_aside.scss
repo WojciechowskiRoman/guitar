@@ -26,6 +26,14 @@
 
     &__form {
         padding: 20px 10px 10px;
+
+        &--search {
+            margin-bottom: 20px;
+
+            @media(max-width: $medium) {
+                margin-bottom: 0;
+            }
+        }
     }
 
     &__label {
