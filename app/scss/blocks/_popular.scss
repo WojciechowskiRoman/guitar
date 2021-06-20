@@ -64,6 +64,10 @@
         opacity: 0.3;
         transition: opacity 0.5s;
         cursor: pointer;
+
+        @media(max-width: $small-phone) {
+            width: 23px;
+        }
     
         &:hover {
             opacity: 1;
