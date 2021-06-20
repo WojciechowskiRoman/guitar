@@ -7,6 +7,7 @@ const imagemin = require('gulp-imagemin');
 const del = require('del');
 const browserSync = require('browser-sync').create();
 const fileinclude = require('gulp-file-include');
+const webp = require('gulp-webp');
 
 function browsersync() {
     browserSync.init({
@@ -62,6 +63,17 @@ function images() {
     ]))
     .pipe(dest('dist/images'))
 }
+
+// function images() {
+//     return src('app/images/**/*.*')
+//     .pipe(imagemin({
+//         progressive: true,
+//         svgoPlugins: [{ removeViewBox: false }],
+//         interlaced: true,
+//         optimizationLevel: 3
+//     }))
+//     .pipe(dest('dist/images'))
+// }
 
 function htmlInclude() {
     return src('app/html/pages/*.html')

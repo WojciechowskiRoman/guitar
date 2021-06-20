@@ -1,3 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15">
-    <path id="grid" d="M855 613.75h3.75V610H855v3.75zm5.625 11.25h3.75v-3.75h-3.75V625zM855 625h3.75v-3.75H855V625zm0-5.625h3.75v-3.75H855v3.75zm5.625 0h3.75v-3.75h-3.75v3.75zM866.25 610v3.75H870V610h-3.75zm-5.625 3.75h3.75V610h-3.75v3.75zm5.625 5.625H870v-3.75h-3.75v3.75zm0 5.625H870v-3.75h-3.75V625z" transform="translate(-855 -610)" fill="#fe3e57" fill-rule="evenodd"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"><path d="M0 3.75h3.75V0H0v3.75zM5.625 15h3.75v-3.75h-3.75V15zM0 15h3.75v-3.75H0V15zm0-5.625h3.75v-3.75H0v3.75zm5.625 0h3.75v-3.75h-3.75v3.75zM11.25 0v3.75H15V0h-3.75zM5.625 3.75h3.75V0h-3.75v3.75zm5.625 5.625H15v-3.75h-3.75v3.75zm0 5.625H15v-3.75h-3.75V15z" fill="#fe3e57" fill-rule="evenodd"/></svg>
