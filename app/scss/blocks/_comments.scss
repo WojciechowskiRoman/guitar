@@ -1,0 +1,192 @@
+.comments {
+
+    padding-bottom: 50px;
+
+    &__title {
+        margin-bottom: 50px;
+        text-align: left;
+        font-size: 30px;
+
+        @media(max-width: $small-phone) {
+            margin-bottom: 35px;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__item {
+        padding: 20px 10px;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid rgba($wood, 0.4);
+    }
+
+    &__photo {
+        margin-right: 30px;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        object-fit: contain;
+    }
+
+    &__content {
+    }
+
+    &__top {
+    }
+
+    &__author {
+        margin-bottom: 10px;
+        display: inline-block;
+    }
+
+    &__name {
+    }
+
+    &__date {
+    }
+
+    &__star {
+        padding: 0;
+        margin-bottom: 10px;
+    }
+
+    &__text {
+        max-width: 50%;
+        width: 100%;
+    }
+}
+
+.comments-form {
+
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+        margin-bottom: 35px;
+        text-align: left;
+        font-size: 30px;
+    }
+
+    &__rating {
+        margin-bottom: 20px;
+
+        @media(max-width: $medium) {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    &__rating-title {
+        margin-right: 20px;
+        font-size: 24px;
+
+        @media(max-width: $medium) {
+            margin: 0 20px 20px 0;
+        }
+    }
+
+    &__label {
+        cursor: pointer;
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+
+        @media(max-width: $medium) {
+            margin: 0 0 5px 0;
+        }
+
+        &:hover {
+            .comments-form__radio {
+                fill: #f39c12;
+            }
+        }
+
+    }
+
+    &__input {
+
+        &:checked + .comments-form__radio {
+            fill: #f39c12;
+        }
+
+    }
+
+    &__radio {
+        fill: #fff;
+        transition: fill 0.3s;
+    }
+
+    &__top {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__info {
+        padding: 15px 10px;
+        width: 50%;
+        background-color: transparent;
+        color: #fff;
+        outline: transparent;
+        border: 1px solid $wood;
+        transition: box-shadow 0.3s;
+
+        &::placeholder {
+            color: #fff;
+        }
+
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+
+        &:focus {
+            box-shadow: 0 0 8px $wood;
+        }
+
+        &--review {
+            margin-bottom: 30px;
+            height: 220px;
+            resize: none;
+            width: 100%;
+
+            @media(max-width: $small-phone) {
+                height: 175px;
+            }
+        }
+    }
+
+    &__button {
+        padding: 10px 15px;
+        margin: 0 auto 0 0;
+        position: relative;
+        width: 180px;
+        font-size: 18px;
+        border: 1px solid $wood;
+        color: #fff;
+        @extend %button-hover;
+
+        @media(max-width: $small-phone) {
+            margin: 0 auto;
+            font-size: 16px;
+        }
+
+        &:hover {
+
+            &::before {
+                top: 0;
+            }
+        }
+
+        &:active {
+            color: #000;
+        }
+
+        &:focus {
+            box-shadow: 0 0 10px $wood;
+        }
+    }
+}

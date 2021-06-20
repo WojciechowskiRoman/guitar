@@ -107,7 +107,6 @@
         background-color: #fff;
         color: #7d7575;
         @extend %button-hover;
-        transition: background-color 0.3s, color 0.3s, border 0.3s;
 
         &::before {
             border-radius: 15px;
@@ -115,17 +114,14 @@
 
         &:hover {
             color: #fff;
+            
             &::before {
                 top: 0;
             }
         }
 
         &:active {
-            color: $wood;
-
-            &::before {
-                background-color: #54391b;
-            }
+            color: #000;
         }
 
         @media(max-width: $medium) {

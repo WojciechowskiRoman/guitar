@@ -9,8 +9,13 @@
 
     &:hover {
         background-color: rgba($gable, 0.9);
+        
         .product__img {
             transform: scale(1.05);
+        }
+
+        .product__reviews {
+            color: $rioja;
         }
     }
 
@@ -53,6 +58,11 @@
 
     &__reviews {
         color: $wood;
+        transition: color 0.3s;
+
+        &:active {
+            color: rgba($wood, 0.9);
+        }
     }
 
     &__cost {

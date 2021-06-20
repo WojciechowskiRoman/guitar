@@ -17,6 +17,7 @@ button {
     border-color: transparent;
     outline: transparent;
     z-index: 1;
+    transition: color 0.3s, background-color 0.3s, box-shadow 0.3s, border 0.3s;
 }
 
 .container {
@@ -88,6 +89,7 @@ button {
     &__list {
         padding: 15px 10px;
         display: flex;
+        flex-wrap: wrap;
         border: 1px solid $wood;
 
         @media(max-width: $medium) {
@@ -98,6 +100,11 @@ button {
     &__item {
         margin-right: 20px;
         position: relative;
+
+        @media(max-width: $medium) {
+            margin-right: 12px;
+        }
+
         &:not(:last-child) {
             &::after {
                 content: '';
@@ -109,6 +116,10 @@ button {
                 height: 14px;
                 top: 3px;
                 right: -17px;
+
+                @media(max-width: $medium) {
+                    right: -13px;
+                }
             }
         }
     }
