@@ -94,65 +94,59 @@
                         <a class="breadcrumbs__link" href="index.html">Home</a>
                     </li>
                     <li class="breadcrumbs__item">
-                        <a class="breadcrumbs__link" href="#">Contact Us</a>
+                        <a class="breadcrumbs__link" href="#">About Us</a>
                     </li>
                 </ul>
             </div>
         </div>
 
-        <section class="contact">
+        <section class="about">
             <div class="container">
-                <div class="contact__inner wow fadeIn">
-                    <div id="map"></div>
-                    <h2 class="contact__title">Get In Touch</h2>
-                    <div class="contact__bottom">
-                        <div class="contact__info">
-                            <ul class="contact__list">
-                                <li class="contact__item">
-                                    <button class="contact__button" type="button">
-                                        <svg  viewBox="0 0 37 37" width="37" height="37">
-                                            <use xlink:href="images/sprite.svg#address"></use>
-                                        </svg>
-                                    </button>
-                                    <h3 class="contact__subtitle">Address</h3>
-                                    <address class="contact__link">
-                                        Whitney Point, New York(NY), 13862
-                                    </address>
-                                </li>
-                                <li class="contact__item">
-                                    <button class="contact__button" type="button">
-                                        <svg  viewBox="0 0 37 37" width="37" height="37">
-                                            <use xlink:href="images/sprite.svg#phone"></use>
-                                        </svg>
-                                    </button>
-                                    <h3 class="contact__subtitle">Our Phone</h3>
-                                    <a class="contact__link" href="tel:45255523">Telephone: 45255523</a>
-                                </li>     
-                                <li class="contact__item">
-                                    <button class="contact__button" type="button">
-                                        <svg  viewBox="0 0 37 37" width="37" height="37">
-                                            <use xlink:href="images/sprite.svg#email"></use>
-                                        </svg>
-                                    </button>
-                                    <h3 class="contact__subtitle">Our Email</h3>
-                                    <a class="contact__link" href="mailto:gerg@gmail.com">Email: gerg@gmail.com</a>
-                                </li>
-                            </ul>                            
-                        </div>
-                        <form class="comments-form">
-                            <div class="comments-form__top">
-                                <label class="comments-form__info">
-                                    <input class="comments-form__user" type="text" placeholder="Your name" required>
-                                </label>
-                                <label class="comments-form__info">
-                                    <input class="comments-form__user" type="email" placeholder="Your email" required>
-                                </label>
-                            </div>
-                            <textarea class="comments-form__user comments-form__user--review" placeholder="Your message" required></textarea>
-                            <button class="comments-form__button" type="submit">Send message</button>
-                        </form>
-                    </div>
-                </div>
+                <h2 class="about__title title">About Us</h2>
+                <span class="about__text">
+                    <p class="wow fadeInUp" data-wow-offset="100">
+                        Chill Shop today is live stores in USA, our own guitar repair shops, a design and
+                        installation department, a tender department and, of course, an online store.
+                    </p>
+                    <p class="wow fadeInUp" data-wow-offset="100">
+                        We have been selling musical instruments professionally since 2005. We work not only with
+                        brands officially represented in USA, but also bring the necessary tools from the USA,
+                        Europe, Japan, Russia, China or any other country to order from the manufacturer's
+                        warehouse.
+                    </p>
+                </span>
+                <img class="about__img wow fadeInUp" data-wow-offset="100" src="images/about/1.jpg" alt="guitar picture">
+                <span class="about__text">
+                    <p class="wow fadeInUp" data-wow-offset="100">
+                        The status of an official dealer for brands such as Fender, Gibson, Ibanez, Carvin, Jackson,
+                        Mayones, Yamaha, Hohner, Ernie Ball and many others gives you access to the largest possible
+                        range and the lowest possible prices.
+                    </p>
+                    <p class="wow fadeInUp" data-wow-offset="100">
+                        We are able to deliver throughout the country not only guitars and strings, but also large
+                        or fragile goods, whether it is a 100 kg tube amplifier, a grand piano or an 8 meter long
+                        projector screen.
+                    </p>
+                    <p class="wow fadeInUp" data-wow-offset="100">
+                        Each Chill Shop brand store is equipped with everything necessary for comfortable testing of
+                        the instrument: soft sofas, wires, amplifiers, pedals, microphones, and more. And in stores,
+                        you can pay for goods with a card or make a purchase on credit.
+                    </p>
+                </span>
+                <img class="about__img wow fadeInUp" data-wow-offset="100" src="images/about/2.jpg" alt="guitar picture">
+                <span class="about__text">
+                    <p class="wow fadeInUp" data-wow-offset="100">
+                        The commission department always has a large selection of vintage guitars. Here you will
+                        find both Gibson of the early seventies or purebred Japanese Fernandes of the mid-nineties,
+                        as well as quite decent modern electric guitars at reasonable prices.
+                    </p>
+                    <p class="wow fadeInUp" data-wow-offset="100">
+                        Every used guitar undergoes mandatory pre-sale preparation: we change the strings for new
+                        ones, adjust the bridge and adjust the truss if necessary. And if more serious repairs are
+                        required, then we carry out that too. So you can be sure - all vintage guitars in our shop
+                        not only look, but sound just great!
+                    </p>
+                </span>
             </div>
         </section>
 
@@ -235,7 +229,7 @@
         </label>
     </div>
 </form>
-    
+
     </main>
 
     <footer class="footer">
@@ -329,25 +323,6 @@
         </svg>
     </a>
 
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&libraries=&v=weekly"
-      async
-    ></script>
-    <script>
-        let map;
-
-        function initMap() {
-            const uluru = { lat: 42.32892190607015, lng: -75.96631374604765 };
-            const map = new google.maps.Map(document.getElementById("map"), {
-                zoom: 13,
-                center: uluru,
-            });
-            const marker = new google.maps.Marker({
-                position: uluru,
-                map: map,
-            });
-        }
-    </script>
     <script src="js/main.min.js"></script>
 </body>
 

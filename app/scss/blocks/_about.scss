@@ -1,0 +1,23 @@
+.about {
+
+    padding: 20px 0 50px;
+    background-image: url("../images/about/bg.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &__title {
+        margin-bottom: 50px;
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 1.8;
+    }
+
+    &__img {
+        margin: 40px 0;
+        object-fit: contain;
+        width: 100%;
+    }
+}

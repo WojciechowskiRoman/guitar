@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitar Shop</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body id="body">
+    @@include('../lego/header.html')
+
+    <main>
+        <div class="breadcrumbs  wow fadeInDown" data-wow-offset="10">
+            <div class="container">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item">
+                        <a class="breadcrumbs__link" href="index.html">Home</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <a class="breadcrumbs__link" href="#">About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <section class="about">
+            <div class="container">
+                <h2 class="about__title title">About Us</h2>
+                <span class="about__text">
+                    <p class="wow fadeInUp" data-wow-offset="100">
+                        Chill Shop today is live stores in USA, our own guitar repair shops, a design and
+                        installation department, a tender department and, of course, an online store.
+                    </p>
+                    <p class="wow fadeInUp" data-wow-offset="100">
+                        We have been selling musical instruments professionally since 2005. We work not only with
+                        brands officially represented in USA, but also bring the necessary tools from the USA,
+                        Europe, Japan, Russia, China or any other country to order from the manufacturer's
+                        warehouse.
+                    </p>
+                </span>
+                <img class="about__img wow fadeInUp" data-wow-offset="100" src="images/about/1.jpg" alt="guitar picture">
+                <span class="about__text">
+                    <p class="wow fadeInUp" data-wow-offset="100">
+                        The status of an official dealer for brands such as Fender, Gibson, Ibanez, Carvin, Jackson,
+                        Mayones, Yamaha, Hohner, Ernie Ball and many others gives you access to the largest possible
+                        range and the lowest possible prices.
+                    </p>
+                    <p class="wow fadeInUp" data-wow-offset="100">
+                        We are able to deliver throughout the country not only guitars and strings, but also large
+                        or fragile goods, whether it is a 100 kg tube amplifier, a grand piano or an 8 meter long
+                        projector screen.
+                    </p>
+                    <p class="wow fadeInUp" data-wow-offset="100">
+                        Each Chill Shop brand store is equipped with everything necessary for comfortable testing of
+                        the instrument: soft sofas, wires, amplifiers, pedals, microphones, and more. And in stores,
+                        you can pay for goods with a card or make a purchase on credit.
+                    </p>
+                </span>
+                <img class="about__img wow fadeInUp" data-wow-offset="100" src="images/about/2.jpg" alt="guitar picture">
+                <span class="about__text">
+                    <p class="wow fadeInUp" data-wow-offset="100">
+                        The commission department always has a large selection of vintage guitars. Here you will
+                        find both Gibson of the early seventies or purebred Japanese Fernandes of the mid-nineties,
+                        as well as quite decent modern electric guitars at reasonable prices.
+                    </p>
+                    <p class="wow fadeInUp" data-wow-offset="100">
+                        Every used guitar undergoes mandatory pre-sale preparation: we change the strings for new
+                        ones, adjust the bridge and adjust the truss if necessary. And if more serious repairs are
+                        required, then we carry out that too. So you can be sure - all vintage guitars in our shop
+                        not only look, but sound just great!
+                    </p>
+                </span>
+            </div>
+        </section>
+
+        @@include('../lego/news.html')
+        @@include('../lego/subscr.html')
+
+    </main>
+
+    @@include('../lego/footer.html')
+
+    <a class="arrow" href="#body">
+        <svg viewBox="0 0 32 32" width="32" height="32">
+            <use xlink:href="images/sprite.svg#up"></use>
+        </svg>
+    </a>
+
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
