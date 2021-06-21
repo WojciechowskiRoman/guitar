@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitar Shop</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body id="body">
+    @@include('../lego/header.html')
+
+    <main>
+
+        <section class="login wow fadeIn" data-wow-offset="10">
+            <h2 class="login__title title">Log in</h2>
+            <div class="container">
+                <form class="login__form" action="#">
+                    <label class="login__label">
+                        <h3 class="login__text">Username or email address *</h3>
+                        <input class="login__input" type="text" required>
+                    </label>
+                    <label class="login__label">
+                        <h3 class="login__text">Password *</h3>
+                        <input class="login__input" type="password" required>
+                    </label>
+                    <button class="login__button" type="submit">Login</button>
+                    <div class="login__box">
+                        <label class="login__label">
+                            <input type="checkbox">
+                            <span>Remember me</span>
+                        </label>
+                        <a class="login__forgot login__link" href="#">Lost your password?</a>
+                    </div>
+                    <a class="login__register login__link" href="registration.html">Not registered? No problem</a>
+                    <a class="login__button" href="registration.html">Create an account</a>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    @@include('../lego/footer.html')
+
+    <a class="arrow" href="#body">
+        <svg viewBox="0 0 32 32" width="32" height="32">
+            <use xlink:href="images/sprite.svg#up"></use>
+        </svg>
+    </a>
+
+
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

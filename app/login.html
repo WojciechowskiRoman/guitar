@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitar Shop</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body id="body">
+    <header class="header">
+
+    <h1 class="sr-only">Guitar shop</h1>
+    
+    <div class="container">
+        <nav class="header__menu menu">
+            <a class="logo" href="index.html" title="go to main page">
+                <img class="logo__img" src="images/logo.svg" alt="logo">
+            </a>
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a class="menu__link" href="index.html">Home</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="catalog.html">Catalog</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="about.html">About</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="blog.html">Blog</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+            <ul class="header__userbar">
+                <li class="header__userbar-item header__account">
+                    <button class="header__button" type="button">
+                        <svg class="header__icon" viewBox="0 0 16 16" width="16" height="16">
+                            <use xlink:href="images/sprite.svg#login"></use>
+                        </svg>
+                    </button>
+
+                    <ul class="header__dropdown dropdown">
+                        <li>
+                            <a class="dropdown__link" href="login.html">Login</a>
+                        </li>
+                        <li>
+                            <a class="dropdown__link" href="registration.html">Registration</a>
+                        </li>
+                        <li>
+                            <a class="dropdown__link" href="#">My account</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="header__userbar-item">
+                    <button class="header__button" type="button">
+                        <svg class="header__icon" viewBox="0 0 16 16" width="16" height="16">
+                            <use xlink:href="images/sprite.svg#search"></use>
+                        </svg>
+                    </button>
+                </li>
+                <li class="header__userbar-item">
+                    <a class="header__link" href="#">
+                        <svg class="header__icon" viewBox="0 0 17 17" width="17" height="17">
+                            <use xlink:href="images/sprite.svg#cart"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+            <div class="header__burger">
+                <span></span>
+            </div>
+        </nav>
+        
+    </div>
+</header>
+
+    <main>
+
+        <section class="login wow fadeIn" data-wow-offset="10">
+            <h2 class="login__title title">Log in</h2>
+            <div class="container">
+                <form class="login__form" action="#">
+                    <label class="login__label">
+                        <h3 class="login__text">Username or email address *</h3>
+                        <input class="login__input" type="text" required>
+                    </label>
+                    <label class="login__label">
+                        <h3 class="login__text">Password *</h3>
+                        <input class="login__input" type="password" required>
+                    </label>
+                    <button class="login__button" type="submit">Login</button>
+                    <div class="login__box">
+                        <label class="login__label">
+                            <input type="checkbox">
+                            <span>Remember me</span>
+                        </label>
+                        <a class="login__forgot login__link" href="#">Lost your password?</a>
+                    </div>
+                    <a class="login__register login__link" href="registration.html">Not registered? No problem</a>
+                    <a class="login__button" href="registration.html">Create an account</a>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+    <div class="container">
+        <ul class="footer__columns">
+            <li class="footer__column">
+                <span class="footer__title">Brands</span>
+                <ul>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Ibanez</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Cort</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Gibson</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Washburn</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="footer__column">
+                <span class="footer__title">Goods</span>
+                <ul>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Electric guitars</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Acoustic guitars</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Bass guitars</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="footer__column">
+                <span class="footer__title">Information</span>
+                <ul>
+                    <li class="footer__item">
+                        <a class="footer__link" href="about.html">About us</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="blog.html">Our Blog</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="footer__column">
+                <a class="logo" href="#body" title="go to header">
+                    <img class="logo__img" src="images/logo.svg" alt="logo">
+                </a>
+                <address>
+                    Whitney Point, New York(NY), 13862
+                </address>
+                <a class="footer__link footer__link--contact" href="tel:45255523">Telephone: 45255523</a>
+                <a class="footer__link footer__link--contact" href="mailto:gerg@gmail.com">Email: gerg@gmail.com</a>
+                <ul class="footer__social">
+                    <li class="footer__icon">
+                        <a class="footer__social-link" href="$">
+                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                <use xlink:href="images/sprite.svg#inst"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__icon">
+                        <a class="footer__social-link" href="$">
+                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                <use xlink:href="images/sprite.svg#google"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__icon">
+                        <a class="footer__social-link" href="$">
+                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                <use xlink:href="images/sprite.svg#facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</footer>
+
+    <a class="arrow" href="#body">
+        <svg viewBox="0 0 32 32" width="32" height="32">
+            <use xlink:href="images/sprite.svg#up"></use>
+        </svg>
+    </a>
+
+
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

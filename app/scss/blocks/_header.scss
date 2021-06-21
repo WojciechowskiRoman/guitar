@@ -196,13 +196,12 @@
 
 .dropdown {
 
-    &__item {
-        width: 129px;
+    width: 135px;
 
-        @media(max-width: $small-phone) {
-            width: 120px;
-        }
+    @media(max-width: $small-phone) {
+        width: 120px;
     }
+
     &__link {
         padding: 20px 10px;
         display: block;
