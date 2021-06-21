@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitar Shop</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body id="body">
+    <header class="header">
+
+    <h1 class="sr-only">Guitar shop</h1>
+    
+    <div class="container">
+        <nav class="header__menu menu">
+            <a class="logo" href="index.html" title="go to main page">
+                <img class="logo__img" src="images/logo.svg" alt="logo">
+            </a>
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a class="menu__link" href="index.html">Home</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="catalog.html">Catalog</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">About</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="blog.html">Blog</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+            <ul class="header__userbar">
+                <li class="header__userbar-item header__account">
+                    <button class="header__button" type="button">
+                        <svg class="header__icon" viewBox="0 0 16 16" width="16" height="16">
+                            <use xlink:href="images/sprite.svg#login"></use>
+                        </svg>
+                    </button>
+
+                    <ul class="header__dropdown dropdown">
+                        <li class="dropdown__item">
+                            <a class="dropdown__link" href="#">Login</a>
+                        </li>
+                        <li class="dropdown__item">
+                            <a class="dropdown__link" href="#">Register</a>
+                        </li>
+                        <li class="dropdown__item">
+                            <a class="dropdown__link" href="#">My account</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="header__userbar-item">
+                    <button class="header__button" type="button">
+                        <svg class="header__icon" viewBox="0 0 16 16" width="16" height="16">
+                            <use xlink:href="images/sprite.svg#search"></use>
+                        </svg>
+                    </button>
+                </li>
+                <li class="header__userbar-item">
+                    <a class="header__link" href="#">
+                        <svg class="header__icon" viewBox="0 0 17 17" width="17" height="17">
+                            <use xlink:href="images/sprite.svg#cart"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+            <div class="header__burger">
+                <span></span>
+            </div>
+        </nav>
+        
+    </div>
+</header>
+
+    <main>
+        <div class="breadcrumbs  wow fadeInDown" data-wow-offset="10">
+            <div class="container">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item">
+                        <a class="breadcrumbs__link" href="index.html">Home</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <a class="breadcrumbs__link" href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <section class="contact">
+            <div class="container">
+                <div class="contact__inner wow fadeIn">
+                    <div id="map"></div>
+                    <h2 class="contact__title">Get In Touch</h2>
+                    <div class="contact__bottom">
+                        <div class="contact__info">
+                            <ul class="contact__list">
+                                <li class="contact__item">
+                                    <button class="contact__button" type="button">
+                                        <svg  viewBox="0 0 37 37" width="37" height="37">
+                                            <use xlink:href="images/sprite.svg#address"></use>
+                                        </svg>
+                                    </button>
+                                    <h3 class="contact__subtitle">Address</h3>
+                                    <address class="contact__link">
+                                        Whitney Point, New York(NY), 13862
+                                    </address>
+                                </li>
+                                <li class="contact__item">
+                                    <button class="contact__button" type="button">
+                                        <svg  viewBox="0 0 37 37" width="37" height="37">
+                                            <use xlink:href="images/sprite.svg#phone"></use>
+                                        </svg>
+                                    </button>
+                                    <h3 class="contact__subtitle">Our Phone</h3>
+                                    <a class="contact__link" href="tel:45255523">Telephone: 45255523</a>
+                                </li>     
+                                <li class="contact__item">
+                                    <button class="contact__button" type="button">
+                                        <svg  viewBox="0 0 37 37" width="37" height="37">
+                                            <use xlink:href="images/sprite.svg#email"></use>
+                                        </svg>
+                                    </button>
+                                    <h3 class="contact__subtitle">Our Email</h3>
+                                    <a class="contact__link" href="mailto:gerg@gmail.com">Email: gerg@gmail.com</a>
+                                </li>
+                            </ul>                            
+                        </div>
+                        <form class="comments-form">
+                            <div class="comments-form__top">
+                                <label class="comments-form__info">
+                                    <input class="comments-form__user" type="text" placeholder="Your name" required>
+                                </label>
+                                <label class="comments-form__info">
+                                    <input class="comments-form__user" type="email" placeholder="Your email" required>
+                                </label>
+                            </div>
+                            <textarea class="comments-form__user comments-form__user--review" placeholder="Your message" required></textarea>
+                            <button class="comments-form__button" type="submit">Send message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="news wow fadeIn" data-wow-offset="200">
+    <div class="container">
+        <h2 class="news__title title">News</h2>
+        <div class="news__list">
+            <article class="blog-item wow fadeIn" data-wow-offset="200">
+                <img class="blog-item__img" src="images/news/1.webp" alt="blog-item image">
+                <div class="blog-item__box">
+                    <time class="blog-item__date" datetime="2021-05-15 19:00">15.05.2021</time>
+                    <a class="blog-item__link" href="blog-one.html" title="go to news">
+                        <h3 class="blog-item__title">Godin</h3>
+                    </a>
+                    <span class="blog-item__summary">
+                        <p>
+                            Godin equips its hybrid Radium model with a sleek new Matte Green finish
+                        </p>
+                    </span>
+                    <a class="blog-item__more" href="blog-one.html">
+                        Show more
+                        <svg class="blog-item__icon" viewBox="0 0 35 35" width="18" height="18">
+                            <use xlink:href="images/sprite.svg#more"></use>
+                        </svg>
+                    </a>
+                </div>
+            </article>
+            <article class="blog-item wow fadeIn" data-wow-offset="200">
+                <img class="blog-item__img" src="images/news/2.webp" alt="blog-item image">
+                <div class="blog-item__box">
+                    <time class="blog-item__date" datetime="2021-05-15 19:00">15.05.2021</time>
+                    <a class="blog-item__link" href="blog-one.html" title="go to news">
+                        <h3 class="blog-item__title">Godin</h3>
+                    </a>
+                    <span class="blog-item__summary">
+                        <p>
+                            Godin equips its hybrid Radium model with a sleek new Matte Green finish
+                        </p>
+                    </span>
+                    <a class="blog-item__more" href="blog-one.html">
+                        Show more
+                        <svg class="blog-item__icon" viewBox="0 0 35 35" width="18" height="18">
+                            <use xlink:href="images/sprite.svg#more"></use>
+                        </svg>
+                    </a>
+                </div>
+            </article>
+            <article class="blog-item wow fadeIn" data-wow-offset="200">
+                <img class="blog-item__img" src="images/news/3.webp" alt="blog-item image">
+                <div class="blog-item__box">
+                    <time class="blog-item__date" datetime="2021-05-15 19:00">15.05.2021</time>
+                    <a class="blog-item__link" href="blog-one.html" title="go to news">
+                        <h3 class="blog-item__title">Godin</h3>
+                    </a>
+                    <span class="blog-item__summary">
+                        <p>
+                            Godin equips its hybrid Radium model with a sleek new Matte Green finish
+                        </p>
+                    </span>
+                    <a class="blog-item__more" href="blog-one.html">
+                        Show more
+                        <svg class="blog-item__icon" viewBox="0 0 35 35" width="18" height="18">
+                            <use xlink:href="images/sprite.svg#more"></use>
+                        </svg>
+                    </a>
+                </div>
+            </article>
+        </div>
+    </div>
+
+</section>
+        <form class="subscr">
+    <div class="container">
+        <label class="subscr__label wow fadeIn" data-wow-offset="10">
+            <span class="subscr__title title">Sign Up for News</span>
+            <span class="subscr__box">
+                <input class="subscr__input" type="email" placeholder="email address" required>
+                <button class="subscr__button" type="submit">Subscribe</button>
+            </span>
+        </label>
+    </div>
+</form>
+    
+    </main>
+
+    <footer class="footer">
+    <div class="container">
+        <ul class="footer__columns">
+            <li class="footer__column">
+                <span class="footer__title">Brands</span>
+                <ul>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Ibanez</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Cort</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Gibson</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Washburn</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="footer__column">
+                <span class="footer__title">Goods</span>
+                <ul>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Electric guitars</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Acoustic guitars</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Bass guitars</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="footer__column">
+                <span class="footer__title">Information</span>
+                <ul>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">About us</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="blog.html">Our Blog</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="footer__column">
+                <a class="logo" href="#body" title="go to header">
+                    <img class="logo__img" src="images/logo.svg" alt="logo">
+                </a>
+                <address>
+                    Whitney Point, New York(NY), 13862
+                </address>
+                <a class="footer__link footer__link--contact" href="tel:45255523">Telephone: 45255523</a>
+                <a class="footer__link footer__link--contact" href="mailto:gerg@gmail.com">Email: gerg@gmail.com</a>
+                <ul class="footer__social">
+                    <li class="footer__icon">
+                        <a class="footer__social-link" href="$">
+                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                <use xlink:href="images/sprite.svg#inst"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__icon">
+                        <a class="footer__social-link" href="$">
+                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                <use xlink:href="images/sprite.svg#google"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__icon">
+                        <a class="footer__social-link" href="$">
+                            <svg viewBox="0 0 16 16" width="16" height="16">
+                                <use xlink:href="images/sprite.svg#facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</footer>
+
+    <a class="arrow" href="#body">
+        <svg viewBox="0 0 32 32" width="32" height="32">
+            <use xlink:href="images/sprite.svg#up"></use>
+        </svg>
+    </a>
+
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+    <script>
+        let map;
+
+        function initMap() {
+            const uluru = { lat: 42.32892190607015, lng: -75.96631374604765 };
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 13,
+                center: uluru,
+            });
+            const marker = new google.maps.Marker({
+                position: uluru,
+                map: map,
+            });
+        }
+    </script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

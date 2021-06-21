@@ -1,0 +1,151 @@
+.contact {
+
+    padding: 20px 0 50px;
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+
+        animation-duration: 1.5s;
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+
+        @media(max-width: $tablet) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    
+    &__info {
+        margin-right: 20px;
+
+        @media(max-width: $tablet) {
+            margin-right: 0;
+            width: 100%;
+        }
+    }
+
+    &__title {
+        margin-bottom: 60px;
+        text-align: center;
+        font-size: 35px;
+
+        @media(max-width: $tablet) {
+            margin-bottom: 50px;
+        }
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+
+        @media(max-width: $tablet) {
+            margin-bottom: 60px;
+        }
+
+        @media(max-width: $medium) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
+    &__item {
+        margin-right: 15px;
+        padding: 20px 15px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        border: 1px solid $wood;
+        max-width: 260px;
+        width: 100%;
+        min-height: 210px;
+        text-align: center;
+        transition: box-shadow 0.3s;
+
+        @media(max-width: $medium) {
+            margin: 0 15px 30px 0;
+        }
+
+        @media(max-width: $small-phone) {
+            margin: 0 10px 30px 10px;
+        }
+
+        &:hover {
+            box-shadow: 0 0 10px $wood;
+        }
+    }
+
+    &__button {
+        margin-bottom: 20px;
+        padding: 5px;
+        fill: #fff;
+        cursor: auto;
+    }
+
+    &__subtitle {
+        margin-bottom: 15px;
+        max-width: 110px;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    &__link {
+        line-height: 1.8;
+        color: #fff;
+        cursor: pointer;
+        transition: color 0.3s;
+
+        &:hover {
+            color: rgba($rioja, 0.7);
+        }
+
+        &:active {
+            color: $rioja;
+        }
+    }
+}
+
+.comments-form {
+
+    @media(max-width: $tablet) {
+        margin-bottom: 50px;
+        width: 100%;
+    }
+
+    &__info {
+
+        &:not(:last-child) {
+            margin-right: 10px;
+
+            @media(max-width: $small-phone) {
+                margin-right: 0;
+            }
+        }
+
+        @media(max-width: $tablet) {
+            margin-bottom: 15px;
+            flex: 0 1 100%;
+            max-width: 100%
+        }
+    }
+
+    &__user {
+
+        &--review {
+            height: 142px;
+        }
+    }
+}
+
+#map {
+    margin-bottom: 60px;
+    height: 350px;
+
+    @media(max-width: $tablet) {
+        margin-bottom: 20px;
+        order: 2;
+    }
+}

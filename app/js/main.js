@@ -24,8 +24,16 @@ $(function() {
     focusOnSelect: true,
   });
 
+  $('.header__account').on('click', function() {
+    $('.header__dropdown').toggleClass('header__dropdown--active');
+  });
+
   $('.catalog__switch').on('click', function() {
     $('.aside').toggleClass('aside--active');
+  });
+
+  $(window).on('scroll', function() {
+    $('.header__menu').toggleClass('header__menu--active', $(this).scrollTop() > 0);
   });
 
   $('.catalog__select').styler({});

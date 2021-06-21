@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitar Shop</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body id="body">
+    @@include('../lego/header.html')
+
+    <main>
+        <div class="breadcrumbs  wow fadeInDown" data-wow-offset="10">
+            <div class="container">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item">
+                        <a class="breadcrumbs__link" href="index.html">Home</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <a class="breadcrumbs__link" href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <section class="contact">
+            <div class="container">
+                <div class="contact__inner wow fadeIn">
+                    <div id="map"></div>
+                    <h2 class="contact__title">Get In Touch</h2>
+                    <div class="contact__bottom">
+                        <div class="contact__info">
+                            <ul class="contact__list">
+                                <li class="contact__item">
+                                    <button class="contact__button" type="button">
+                                        <svg  viewBox="0 0 37 37" width="37" height="37">
+                                            <use xlink:href="images/sprite.svg#address"></use>
+                                        </svg>
+                                    </button>
+                                    <h3 class="contact__subtitle">Address</h3>
+                                    <address class="contact__link">
+                                        Whitney Point, New York(NY), 13862
+                                    </address>
+                                </li>
+                                <li class="contact__item">
+                                    <button class="contact__button" type="button">
+                                        <svg  viewBox="0 0 37 37" width="37" height="37">
+                                            <use xlink:href="images/sprite.svg#phone"></use>
+                                        </svg>
+                                    </button>
+                                    <h3 class="contact__subtitle">Our Phone</h3>
+                                    <a class="contact__link" href="tel:45255523">Telephone: 45255523</a>
+                                </li>     
+                                <li class="contact__item">
+                                    <button class="contact__button" type="button">
+                                        <svg  viewBox="0 0 37 37" width="37" height="37">
+                                            <use xlink:href="images/sprite.svg#email"></use>
+                                        </svg>
+                                    </button>
+                                    <h3 class="contact__subtitle">Our Email</h3>
+                                    <a class="contact__link" href="mailto:gerg@gmail.com">Email: gerg@gmail.com</a>
+                                </li>
+                            </ul>                            
+                        </div>
+                        <form class="comments-form">
+                            <div class="comments-form__top">
+                                <label class="comments-form__info">
+                                    <input class="comments-form__user" type="text" placeholder="Your name" required>
+                                </label>
+                                <label class="comments-form__info">
+                                    <input class="comments-form__user" type="email" placeholder="Your email" required>
+                                </label>
+                            </div>
+                            <textarea class="comments-form__user comments-form__user--review" placeholder="Your message" required></textarea>
+                            <button class="comments-form__button" type="submit">Send message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        @@include('../lego/news.html')
+        @@include('../lego/subscr.html')
+    
+    </main>
+
+    @@include('../lego/footer.html')
+
+    <a class="arrow" href="#body">
+        <svg viewBox="0 0 32 32" width="32" height="32">
+            <use xlink:href="images/sprite.svg#up"></use>
+        </svg>
+    </a>
+
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+    <script>
+        let map;
+
+        function initMap() {
+            const uluru = { lat: 42.32892190607015, lng: -75.96631374604765 };
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 13,
+                center: uluru,
+            });
+            const marker = new google.maps.Marker({
+                position: uluru,
+                map: map,
+            });
+        }
+    </script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

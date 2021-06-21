@@ -14,7 +14,12 @@ body {
 }
 
 main {
+    margin-top: 144px;
     flex-grow: 1;
+
+    @media(max-width: $medium) {
+        margin-top: 83.3px;
+    }
 }
 
 a {
@@ -84,12 +89,9 @@ button {
 
 .logo {
     z-index: 4;
-    &__img {
-        width: 100%;
-    }
 
     @media(max-width: $medium) {
-        padding-bottom: 10px;
+        width: 49%;
     }
 }
 
