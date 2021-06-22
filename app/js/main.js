@@ -107,8 +107,8 @@ $(function() {
       {
         breakpoint: 1024,
         settings: {
-          // arrows: false,
-          // dots: true,
+          arrows: false,
+          dots: true,
           centerMode: true,
           slidesToShow: 2
         }
@@ -117,8 +117,8 @@ $(function() {
         breakpoint: 768,
         settings: {
           centerMode: false,
-          // arrows: false,
-          // dots: true,
+          arrows: false,
+          dots: true,
           slidesToShow: 2
         }
       },

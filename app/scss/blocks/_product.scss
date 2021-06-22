@@ -1,9 +1,9 @@
 .product {
-    background-color: $gable;
-    border-radius: 5px;
+    position: relative;
     height: 400px;
     max-width: 260px;
-    position: relative;
+    background-color: $gable;
+    border-radius: 5px;
     overflow: hidden;
     transition: background-color 0.3s;
 
@@ -19,12 +19,19 @@
         }
     }
 
-    &__like {
+    &__action {
         position: absolute;
         top: 6px;
         right: 6px;
         fill: $wood;
+    }
+
+    &__icon {
         transition: transform 0.3s, fill 0.3s;
+        
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
 
         &:hover {
             transform: scale(1.1);
@@ -40,8 +47,8 @@
     }
 
     &__img {
-        height: 80%;
         margin: 0 auto;
+        height: 80%;
         transition: transform 0.3s;
     }
 
